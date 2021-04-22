@@ -8,7 +8,7 @@ class Ship {
     this.odometer = thisShip.odometer || 0;
     this.fuelCapacity = thisShip.fuelCapacity || 10;
     this.fuel = 0;
-    this.captain = thisShip.captain;
+    this.captian = thisShip.captian;
     this.crew = [];
     this.cargo = [];
     this.parts = thisShip.parts || {
