@@ -19,7 +19,8 @@ class Human {
     return snowman
   }
   placeMagicHat() {
-    var snowman = new Snowman(this.materials);
+    var snowman = this.buildASnowman()
+    // var snowman = new Snowman(this.materials);
     snowman.canWearMagicHat()
     if (snowman.magicHat) {
       return `Woah, this snowman is coming to life!`

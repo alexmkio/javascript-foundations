@@ -1,20 +1,19 @@
 class Skier {
-  constructor(name, hasLiftTicket){
+  constructor(name, ticket) {
     this.name = name;
-    this.hasLiftTicket = hasLiftTicket;
+    this.hasLiftTicket = ticket;
     this.skillLevel = 1;
-    this.nextSlope = 'green circle';
+    this.nextSlope = `green circle`;
   }
-  takeLesson(){
-    this.skillLevel++;
+  takeLesson() {
+    this.skillLevel++
   }
-  pickSlope(){
-    if(this.skillLevel >= 5){
-      this.nextSlope = "black diamond";
-    } else if (this.skillLevel >= 3){
-      this.nextSlope = "blue square";
+  pickSlope() {
+    if (this.skillLevel === 3) {
+      this.nextSlope = `blue square`
+    } else if (this.skillLevel === 5) {
+      this.nextSlope = `black diamond`
     }
   }
 }
-
 module.exports = Skier;
